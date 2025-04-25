@@ -6,6 +6,11 @@ const Main = () => {
     name: "Gnanashekar",
     age: 35,
   });
+
+  const [newuser, setNewUser] = useState({
+    name: "Sheker",
+    Salary: 140000
+  })
   return (
     <div
       style={{
@@ -17,6 +22,9 @@ const Main = () => {
         backgroundColor: "blue",
       }}
     >
+      <contextCreation.provider>
+
+      </contextCreation>
       <GrandParents user={user}/>
     </div>
   );
